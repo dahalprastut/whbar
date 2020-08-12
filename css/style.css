@@ -223,6 +223,19 @@ main .content .calculate-left {
   padding-top: 2.5rem;
 }
 
+main .content .calculate-left .btn span {
+  color: #6236FF;
+  font-size: 1.4rem;
+}
+
+main .content .calculate-left .btn:hover {
+  color: #6236FF;
+}
+
+main .content .calculate-left .btn:hover span {
+  color: #010101;
+}
+
 main .content .calculate-left h4 {
   font-size: 2.5rem;
   color: #010101;

@@ -259,6 +259,23 @@ main{
                 text-align: center;
                 padding-top: 2.5rem;
 
+                .btn{
+                    span{
+                        color:$primary-color;
+                        font-size: 1.4rem;
+                    }
+
+                    &:hover{
+                        color:$primary-color;
+
+                        span{
+                            color:$text-primary-color;
+                        }
+                    }
+
+
+                }
+
                 h4{
                     font-size: 2.5rem;
                     color:$text-primary-color;
