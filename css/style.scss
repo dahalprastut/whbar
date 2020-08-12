@@ -1,0 +1,446 @@
+
+
+//------------- variables starts -------------
+$bg-color:#E7F1F9;
+$primary-color:#6236FF;
+$text-primary-color:#010101;
+$white-color:#fff;
+
+
+//------------- variables ends -------------
+
+// ------------ global starts ----------------
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    width:100%;
+    position: relative;
+    background:$bg-color url('../images/bg.png') 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+@media(max-width:800px){
+    html{
+        font-size: 56%
+    }
+}
+
+@media(max-width:620px){
+    html{
+        font-size: 52%
+    }
+}
+
+@media(max-width:480px){
+    html{
+        font-size: 48%;
+    }
+}
+
+
+
+
+// ------------ global ends ----------------
+
+
+
+
+// ------------- common starts ----------------
+
+.center{
+    max-width: 96rem;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+img{
+    width:100%;
+    height: auto;
+}
+
+.logo{
+    // padding-top:1rem;
+    margin-top: -3rem;
+
+    img{
+        width:8rem;
+        display: block;
+    }
+}
+
+.nav-right_login{
+    margin-left: 3.5rem;
+
+    display: flex;
+    padding:0 1.5rem;
+    height:2.8rem;
+    line-height: 2.8rem;
+
+    strong{
+        font-size: 1.9rem;
+
+    }
+
+    a{
+        font-size: 1.2rem;
+        margin-left: 1.2rem;
+        height: 2.4rem;
+        color:$text-primary-color;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover{
+            color:$primary-color;
+        }
+    }
+
+    .active{
+        border-bottom: 0.3rem solid $primary-color;
+        
+        
+    }
+}
+
+.boxed{
+    border-radius: 0.8rem;
+    background: #E6F0F8;
+    box-shadow:  5px 5px 10px #d6dfe7, -5px -5px 10px #f6ffff;
+}
+
+.btn{
+    background: transparent;
+    border: none;
+    color:$text-primary-color;
+    font-size: 1.7rem;
+    margin-top: 0.6rem;
+    cursor: pointer;
+}
+
+
+// ------------ common ends -----------------
+
+
+
+// ------------ home page starts --------------
+
+.mobile-login{
+    display: none;
+}
+
+// navigation starts
+nav{
+    margin-top: 5rem;
+
+    .center{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+   
+    .nav-right{
+        display: flex;
+
+
+        >a{
+            padding:0 3.5rem;
+            height:2.8rem;
+            line-height: 2.8rem;
+            font-size: 1.9rem;
+            color:$text-primary-color;
+            text-decoration: none;
+            font-weight: 600;
+            span{
+                color:$primary-color;
+                font-size: 1.4rem;
+            }
+            
+            margin-left:3.5rem;
+
+            &:hover{
+                color:$primary-color;
+                border-radius: 8px;
+                background: #E6F0F8;
+                box-shadow: inset 5px 5px 10px #d6dfe7, 
+                            inset -5px -5px 10px #f6ffff;
+
+                            span{
+                                color:$text-primary-color;
+                            }
+            }
+            
+        }
+       
+    }
+}
+
+@media(max-width:620px){
+    .mobile-login{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    nav{
+
+        .logo{
+            display: none;
+        }
+        .nav-right{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            >a{
+                margin-left: 0;
+            }
+            &_login{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// navigation ends
+
+
+
+// ------------ home page ends --------------
+
+
+// ------------ main starts -----------------
+
+main{
+    // position: absolute;
+    // top:20%;
+    // left:0;
+    // width:100%;
+    margin-top: 6rem;
+    .content{
+        padding:5rem 6rem 13.5rem 6rem;
+
+        .total{
+            display:flex;
+            justify-content: flex-end;
+
+            strong,span{
+                font-size: 2rem;
+                color:$text-primary-color;
+                font-weight: 700;
+            }
+
+            span{
+                color:$primary-color;
+
+            }
+        }
+
+        .calculate{
+            margin-top: 4rem;
+            display: flex;
+            &-left{
+                width:25%;
+                // background: red;
+                text-align: center;
+                padding-top: 2.5rem;
+
+                h4{
+                    font-size: 2.5rem;
+                    color:$text-primary-color;
+                    font-weight: 700;
+                }
+
+                .balance{
+                    margin-top: 0.7rem;
+                    color: $text-primary-color;
+                    font-size: 1.7rem;
+
+                    span{
+                        color:$primary-color;
+                        font-size: 1.7rem;
+                    }
+                }
+
+              
+                
+            }
+            &-center{
+                width:50%;
+                // background: green;
+                // display: flex;
+                
+                // justify-content: center;
+                text-align: center;
+
+                .tabs{
+                    width:50%;
+                    display: inline-block;
+                    height:3.4rem;
+                    line-height: 3.4rem;
+                    padding: 0.1rem;
+
+                    button{
+                        width:47%;  
+                        border: none;
+                        cursor: pointer;
+                        background: transparent;
+                        font-size: 1.2rem;
+                        color:$text-primary-color;
+                        font-weight: 600;
+                        outline: 0;
+                        height: 80%;
+
+                        &:hover{
+                            color:$primary-color;
+                            
+                        }
+                        
+                       
+                    }
+                    button.active{
+                        color:$primary-color;
+                        cursor: default;
+                        border-radius: 8px;
+                        background: #E6F0F8;
+                        box-shadow: inset 5px 5px 10px #d6dfe7, 
+                                    inset -5px -5px 10px #f6ffff;
+
+                    }
+                }
+
+            
+                .main-calculation{
+                    margin-top: 1rem;
+                    display: flex;
+                    padding-left: 3rem;
+                    // justify-content: center;
+                    .text-area{
+                        width:70%;
+                        background: $white-color;
+                        height: 4.4rem;
+                        border-radius: 0.8rem;
+                        line-height: 4.4rem;
+                        text-align: left;
+                        padding: 0 0.2rem;
+                        display: flex;
+
+                        input{
+                            border: none;
+                            color:$text-primary-color;
+                            opacity: 0.6;
+                            height: 100%;
+                            outline: 0;
+                            padding:0 0.2rem;
+                            width:65%;
+                            font-size: 2rem;
+                        }
+
+                        span{
+                            font-size: 2rem;
+                            color:$text-primary-color;
+                            opacity: 0.6;
+                            text-align: right;
+
+                            width:30%;
+                        }
+
+                    }
+
+                    .button-wrap{
+                        width:30%;
+                        display: flex;
+                        justify-content: center;
+
+                        button{
+                            width:80%;
+                            color:$white-color;
+                            background: $primary-color;
+                            border: none;
+                            border-radius: 0.8rem;
+                            outline: 0;
+                            cursor: pointer;
+
+                            &:hover{
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+
+            }
+          
+        }
+        
+    }
+    
+}
+
+
+@media(max-width:620px){
+    main{
+        .content{
+            .calculate{
+                flex-direction: column;
+
+                >div{
+                    width:100%;
+                }
+
+                &-center{
+                    margin:3rem 0rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+// ------------ main ends -----------------
+
+
+// ----------- footer starts ---------------
+
+footer{
+    color:$primary-color;
+    font-size: 2rem;
+    margin-top: 5rem;
+    // position:  absolute;
+    // bottom:0;
+    // left:0;
+    .center{
+        display: flex;
+        justify-content: space-around;
+
+
+       .social{
+           display: flex;
+
+           a{
+               img{
+                   width:2.5rem;
+
+               }
+           }
+       }
+
+    }
+}
+
+
+// ---------- footer ends ----------------
