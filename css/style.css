@@ -254,6 +254,7 @@ main .content .calculate-left .balance {
 main .content .calculate-left .balance span {
   color: #6236FF;
   font-size: 1.7rem;
+  font-weight: 600;
 }
 
 main .content .calculate-center {
