@@ -144,6 +144,11 @@ img{
     cursor: pointer;
 }
 
+h5{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color:$text-primary-color;
+}
 
 // ------------ common ends -----------------
 
@@ -492,3 +497,176 @@ footer{
 
 
 // ---------- footer ends ----------------
+
+
+
+// ---------------------------------------
+// ---------------------------------------
+
+// --------- status page starts -------------
+
+// ---------------------------------------
+// ---------------------------------------
+
+// ----------- status starts-------------
+
+.status{
+    margin-top: 14rem;
+   
+
+
+    &-lower{
+        display: flex;
+        margin-top:4rem;
+        >div{
+            // width:25%;
+            padding:0 5rem;
+            // background: red;
+            // margin:0 1.4rem;
+            border-right:0.1rem solid $border-color;
+
+            text-align: center;
+
+            &:last-child{
+                border-right: none;
+            }
+            strong{
+                color:$primary-color;
+                display: block;
+                font-size: 3rem;
+
+                small{
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+            }
+
+            span{
+                display: block;
+                color:$text-primary-color;
+                font-weight: 600;
+                font-size: 1.6rem;
+                margin-top: 1.2rem;
+            }
+
+        }
+    }
+}
+
+@media(max-width:800px){
+    .status{
+        &-lower{
+            >div{
+                padding: 0 3rem;
+                text-align: left;
+                strong{
+                    font-size: 2.4rem;
+
+                    small{
+                        font-size: 1.6rem;
+                    }
+                }
+
+                span{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:620px){
+
+    .status{
+        &-lower{
+            flex-direction: column;
+
+            >div{
+                border-right:none;
+                padding: 0;
+
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+// ----------- status ends-------------
+
+// ------------ authorities starts ---------
+
+.authorities{
+    margin-top:12rem;
+
+    ul{
+        margin-top: 3rem;
+        li{
+            margin-top: 2.4rem;
+
+            display: flex;
+            strong{
+                border-right:0.1rem solid $border-color;
+                color:$primary-color;
+                font-size: 3rem;
+                padding-right:2rem;
+            }
+
+            >div{
+                display: flex;
+                padding-left:2rem;
+
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    margin-right:2rem;
+                }
+
+                .des{
+                    display: flex;
+                    align-items: center;
+                    color:$text-primary-color;
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:620px){
+    .authorities{
+        ul{
+            li{
+                >div{
+                    .icon{
+                        display: none;
+                    }
+
+                    .des{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// --------- authorities ends ------------
+
+// ---------------------------------------
+// ---------- status page footer ----------
+
+.status-page{
+    footer{
+        margin-top: 10rem;
+    }
+}
+
+// -status page footer -
+// ------------------------------------------
+
+
+

@@ -104,6 +104,12 @@ img {
   cursor: pointer;
 }
 
+h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #010101;
+}
+
 .mobile-login {
   display: none;
 }
@@ -414,5 +420,139 @@ footer .center .social a {
 
 footer .center .social a img {
   width: 2.5rem;
+}
+
+.status {
+  margin-top: 14rem;
+}
+
+.status-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4rem;
+}
+
+.status-lower > div {
+  padding: 0 5rem;
+  border-right: 0.1rem solid #CCD5DD;
+  text-align: center;
+}
+
+.status-lower > div:last-child {
+  border-right: none;
+}
+
+.status-lower > div strong {
+  color: #6236FF;
+  display: block;
+  font-size: 3rem;
+}
+
+.status-lower > div strong small {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.status-lower > div span {
+  display: block;
+  color: #010101;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .status-lower > div {
+    padding: 0 3rem;
+    text-align: left;
+  }
+  .status-lower > div strong {
+    font-size: 2.4rem;
+  }
+  .status-lower > div strong small {
+    font-size: 1.6rem;
+  }
+  .status-lower > div span {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .status-lower {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .status-lower > div {
+    border-right: none;
+    padding: 0;
+    margin-top: 3rem;
+  }
+}
+
+.authorities {
+  margin-top: 12rem;
+}
+
+.authorities ul {
+  margin-top: 3rem;
+}
+
+.authorities ul li {
+  margin-top: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.authorities ul li strong {
+  border-right: 0.1rem solid #CCD5DD;
+  color: #6236FF;
+  font-size: 3rem;
+  padding-right: 2rem;
+}
+
+.authorities ul li > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 2rem;
+}
+
+.authorities ul li > div .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2rem;
+}
+
+.authorities ul li > div .des {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #010101;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 620px) {
+  .authorities ul li > div .icon {
+    display: none;
+  }
+  .authorities ul li > div .des {
+    font-size: 1.4rem;
+  }
+}
+
+.status-page footer {
+  margin-top: 10rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,7 +10,7 @@
     <title>WHBAR</title>
 </head>
 
-<body>
+<body class="status-page">
     <div class="mobile-login">
         <div class="boxed nav-right_login">
             <strong>Login</strong>
@@ -55,64 +55,90 @@
 
     <!-- nav ends -->
 
-    <!-- main starts -->
+    <!-- status starts -->
 
-    <main>
+    <div class="status">
         <div class="center">
-            <div class="content boxed">
-                <div class="total">
-                    <strong>My Balance: </strong>
-                    <span>10002 HBAR</span>
+            <h5>Configuration</h5>
+            <div class="status-lower">
+                <div>
+                    <strong>2</strong>
+                    <span>Required Signatures</span>
                 </div>
-                <div class="calculate">
-                    <div class="calculate-left">
-                        <h4>HBAR Network</h4>
-                        <div class="balance">
-                            Balance:
-                            <span>100.20 WHBAR</span>
-                        </div>
-                        <button class="btn">
-                            <span>
-                                <i class="fas fa-info-circle"></i>
-                            </span> more info</button>
-                    </div>
-                    <div class="calculate-center">
-                        <div class="tabs boxed">
-                            <button class="hbar-btn active">HBAR</button>
-                            <button class="eth-btn">ETH</button>
-                        </div>
-
-                        <div class="main-calculation">
-
-                            <div class="text-area">
-                                <input type="text" placeholder="00">
-                                <span class="status">HBAR</span>
-
-                            </div>
-
-                            <div class="button-wrap">
-                                <button class="operation">Wrap</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="calculate-left calculate-right">
-                        <h4>ETH Network</h4>
-                        <div class="balance">
-                            Balance:
-                            <span>100.20 WHBAR</span>
-                        </div>
-                        <button class="btn">
-                            <span>
-                                <i class="fas fa-info-circle"></i>
-                            </span> more info</button>
-                    </div>
+                <div>
+                    <strong>3</strong>
+                    <span>Authorities</span>
+                </div>
+                <div>
+                    <strong>150 m
+                        <small>POA</small>
+                    </strong>
+                    <span>Max Single Deposit</span>
+                </div>
+                <div>
+                    <strong>2.82 m
+                        <small>POA</small>
+                    </strong>
+                    <span>Remaining Daily POA Quota</span>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
 
 
-    <!-- main ends -->
+
+    <!-- status ends -->
+
+    <!-- authorities starts -->
+    <div class="authorities">
+        <div class="center">
+            <h5>Authorities</h5>
+
+            <ul>
+                <li>
+                    <strong>
+                        1
+                    </strong>
+                    <div>
+                        <div class="icon">
+                            icon
+                        </div>
+                        <div class="des">
+                            0x5D44BC8642947685F45004c936245B969F9709a6
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                        2
+                    </strong>
+                    <div>
+                        <div class="icon">
+                            icon
+                        </div>
+                        <div class="des">
+                            0x5D44BC8642947685F45004c936245B969F9709a6
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <strong>
+                        3
+                    </strong>
+                    <div>
+                        <div class="icon">
+                            icon
+                        </div>
+                        <div class="des">
+                            0x5D44BC8642947685F45004c936245B969F9709a6
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- authorities ends -->
 
     <!-- footer starts -->
 
@@ -145,7 +171,6 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <script src="js/main.js"></script>
     <script src="js/common.js"></script>
 </body>
 
