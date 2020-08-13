@@ -422,8 +422,17 @@ footer .center .social a img {
   width: 2.5rem;
 }
 
-.status {
+.status-content {
   margin-top: 14rem;
+}
+
+.status-content .boxed {
+  padding-left: 2rem;
+}
+
+.status {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .status-lower {
@@ -493,7 +502,8 @@ footer .center .social a img {
 }
 
 .authorities {
-  margin-top: 12rem;
+  margin-top: 9rem;
+  padding-bottom: 3rem;
 }
 
 .authorities ul {
@@ -554,5 +564,39 @@ footer .center .social a img {
 
 .status-page footer {
   margin-top: 10rem;
+}
+
+.status-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 8rem;
+}
+
+.status-bottom > div {
+  width: 50%;
+}
+
+@media (max-width: 480px) {
+  .status-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 4rem;
+    padding-top: 0;
+  }
+  .status-bottom > div {
+    width: 100%;
+  }
+  .status-bottom .status-final {
+    margin-top: 3rem;
+  }
+  .status-bottom .status-lower {
+    margin-top: 0rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

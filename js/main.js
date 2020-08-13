@@ -1,6 +1,6 @@
 const ethBtn = document.querySelector('.eth-btn');
 const hbarBtn = document.querySelector('.hbar-btn');
-const status = document.querySelector('.status');
+const status = document.querySelector('.stat');
 const operation = document.querySelector('.operation');
 
 

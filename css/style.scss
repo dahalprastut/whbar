@@ -510,10 +510,20 @@ footer{
 
 // ----------- status starts-------------
 
-.status{
+.status-content{
     margin-top: 14rem;
-   
+    
+   .boxed{
+    //    padding:0.1rem 0; 
+    // padding-top: 0.2rem;
+    padding-left: 2rem;
+   }
+}
 
+.status{
+   
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
     &-lower{
         display: flex;
@@ -597,7 +607,8 @@ footer{
 // ------------ authorities starts ---------
 
 .authorities{
-    margin-top:12rem;
+    margin-top:9rem;
+    padding-bottom: 3rem;
 
     ul{
         margin-top: 3rem;
@@ -667,6 +678,46 @@ footer{
 
 // -status page footer -
 // ------------------------------------------
+
+
+// ----------------------------------------
+// --------------------------------------
+
+// --------statistics page ---------------
+
+// ------------------------------------------
+// ---------------------------------------
+
+
+.status-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    >div{
+        width:50%;
+    }
+
+   
+}
+
+@media(max-width:480px){
+    .status-bottom{
+        flex-direction: column;
+        margin-top:4rem;
+        padding-top: 0;
+        >div{
+            width:100%;
+        }
+
+        .status-final{
+            margin-top: 3rem;
+        }
+
+        .status-lower{
+            margin-top: 0rem;
+        }
+    }
+}
 
 
 

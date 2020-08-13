@@ -10,7 +10,7 @@
     <title>WHBAR</title>
 </head>
 
-<body>
+<body class="status-page">
     <div class="mobile-login">
         <div class="boxed nav-right_login">
             <strong>Login</strong>
@@ -54,65 +54,93 @@
     </nav>
 
     <!-- nav ends -->
-
-    <!-- main starts -->
-
-    <main>
+    <div class="status-content">
         <div class="center">
-            <div class="content boxed">
-                <div class="total">
-                    <strong>My Balance: </strong>
-                    <span>10002 HBAR</span>
-                </div>
-                <div class="calculate">
-                    <div class="calculate-left">
-                        <h4>HBAR Network</h4>
-                        <div class="balance">
-                            Balance:
-                            <span>100.20 WHBAR</span>
-                        </div>
-                        <button class="btn">
-                            <span>
-                                <i class="fas fa-info-circle"></i>
-                            </span> more info</button>
-                    </div>
-                    <div class="calculate-center">
-                        <div class="tabs boxed">
-                            <button class="hbar-btn active">HBAR</button>
-                            <button class="eth-btn">ETH</button>
-                        </div>
 
-                        <div class="main-calculation">
+            <div class="boxed">
+                <!-- status starts -->
 
-                            <div class="text-area">
-                                <input type="text" placeholder="00">
-                                <span class="stat">HBAR</span>
-
-                            </div>
-
-                            <div class="button-wrap">
-                                <button class="operation">Wrap</button>
-                            </div>
+                <div class="status">
+                    <h5>Configuration</h5>
+                    <div class="status-lower">
+                        <div>
+                            <strong>249</strong>
+                            <span>Users</span>
                         </div>
-                    </div>
-                    <div class="calculate-left calculate-right">
-                        <h4>ETH Network</h4>
-                        <div class="balance">
-                            Balance:
-                            <span>100.20 WHBAR</span>
+                        <div>
+                            <strong>107.15 m
+                                <small>POA</small>
+                            </strong>
+                            <span>Total POA Bridged</span>
                         </div>
-                        <button class="btn">
-                            <span>
-                                <i class="fas fa-info-circle"></i>
-                            </span> more info</button>
+                        <div>
+                            <strong>27.59 m
+                                <small>POA</small>
+                            </strong>
+                            <span>Locked POA in Bridge Contract </span>
+                        </div>
+                        <div>
+                            <strong>27.59 m
+                                <small>POA</small>
+                            </strong>
+                            <span>POA20 Tokens Amount</span>
+                        </div>
                     </div>
                 </div>
+
+
+
+                <!-- status ends -->
+
+                <!-- status starts -->
+
+                <div class="status status-bottom">
+                    <div class="status-initial">
+
+                        <h5>Home Deposits</h5>
+                        <div class="status-lower">
+                            <div>
+                                <strong>3 k</strong>
+                                <span>Transactions</span>
+                            </div>
+                            <div>
+                                <strong>67.28 m
+                                    <small>POA</small>
+                                </strong>
+                                <span>Total Value</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="status-final">
+                        <h5>Home Withdraws</h5>
+                        <div class="status-lower">
+                            <div>
+                                <strong>2K</strong>
+                                <span>Transactions</span>
+                            </div>
+                            <div>
+                                <strong>39.87 m
+                                    <small>POA</small>
+                                </strong>
+                                <span>Total Value</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- status ends -->
+
+
             </div>
         </div>
-    </main>
-
-
-    <!-- main ends -->
+    </div>
 
     <!-- footer starts -->
 
@@ -145,7 +173,6 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <script src="js/main.js"></script>
     <script src="js/common.js"></script>
 </body>
 
