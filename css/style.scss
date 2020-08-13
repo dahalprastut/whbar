@@ -6,6 +6,7 @@ $primary-color:#6236FF;
 $text-primary-color:#010101;
 $white-color:#F5F5F5;
 $border-color:#CCD5DD;
+$ok-color:#7cd1f9;
 
 
 //------------- variables ends -------------
@@ -721,3 +722,82 @@ footer{
 
 
 
+// --------------------------------------\
+// --------------------------------------
+
+
+// --------- pop ups ------------------------
+
+// --------------- error starts --------------
+
+.error{
+    background: #fff;
+    position: absolute;
+    top:50%;
+    left:50%;
+    padding: 2rem;
+    width:30%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    border-radius: 0.8rem;
+    display: none;
+
+    &-icon{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 2.6rem;
+        font-weight: 700;
+        color:$text-primary-color;
+        margin-top: 4rem;
+    }
+
+    p{
+        text-align: center;
+        color:$text-primary-color;
+        font-size: 1.6rem;
+        
+        margin-top: 2rem;
+    }
+
+    .btn-wrapper{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 3rem;
+
+        button{
+            background: $ok-color;
+            color:#fff;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.8rem;
+            cursor: pointer;
+            padding:1rem 2.4rem;
+            font-size: 1.4rem;
+            outline: 0;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}
+
+
+@media(max-width:800px){
+    .error{
+        width:50%;
+    }
+}
+
+@media(max-width:480px){
+    .error{
+        width:80%;
+    }
+}
+
+// --------------- error ends --------------

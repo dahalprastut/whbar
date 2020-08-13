@@ -21,3 +21,23 @@ hbarBtn.addEventListener('click', () => {
 })
 
 
+
+const error = document.querySelector('.error');
+const textArea = document.querySelector('.text');
+const ok = document.querySelector('.ok');
+
+operation.addEventListener('click', () => {
+    if (textArea.value == '') {
+        error.style.display = 'block';
+    }
+})
+
+ok.addEventListener('click', () => {
+    if (textArea.value == '') {
+        error.style.display = 'none';
+    }
+})
+
+
+
+
