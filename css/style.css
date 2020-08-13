@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -66,6 +67,7 @@ img {
 
 .nav-right_login strong {
   font-size: 1.9rem;
+  font-weight: 600;
 }
 
 .nav-right_login a {
@@ -79,6 +81,7 @@ img {
 
 .nav-right_login a:hover {
   color: #6236FF;
+  border-bottom: 0.3rem solid #6236FF;
 }
 
 .nav-right_login .active {
@@ -184,7 +187,7 @@ nav .nav-right > a:hover span {
 }
 
 main {
-  margin-top: 6rem;
+  margin-top: 20rem;
 }
 
 main .content {
@@ -292,7 +295,7 @@ main .content .calculate-center .tabs button.active {
 }
 
 main .content .calculate-center .main-calculation {
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,13 +303,16 @@ main .content .calculate-center .main-calculation {
 }
 
 main .content .calculate-center .main-calculation .text-area {
-  width: 70%;
-  background: #fff;
+  width: 80%;
+  background: #F5F5F5;
+  border-top: 0.2rem solid #CCD5DD;
+  border-left: 0.2rem solid #CCD5DD;
   height: 4.4rem;
   border-radius: 0.8rem;
   line-height: 4.4rem;
   text-align: left;
-  padding: 0 0.2rem;
+  padding: 0 0.1rem;
+  padding-left: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -315,6 +321,7 @@ main .content .calculate-center .main-calculation .text-area {
 main .content .calculate-center .main-calculation .text-area input {
   border: none;
   color: #010101;
+  background: #F5F5F5;
   opacity: 0.6;
   height: 100%;
   outline: 0;
@@ -343,11 +350,13 @@ main .content .calculate-center .main-calculation .button-wrap {
 
 main .content .calculate-center .main-calculation .button-wrap button {
   width: 80%;
-  color: #fff;
+  color: #F5F5F5;
   background: #6236FF;
   border: none;
   border-radius: 0.8rem;
   outline: 0;
+  box-shadow: 5px 5px 10px #6236FF, -5px -5px 10px #f6ffff;
+  -webkit-box-shadow: 5px 5px 10px #6236FF, -5px -5px 10px #f6ffff;
   cursor: pointer;
 }
 
@@ -373,7 +382,8 @@ main .content .calculate-center .main-calculation .button-wrap button:hover {
 footer {
   color: #6236FF;
   font-size: 2rem;
-  margin-top: 5rem;
+  margin-top: 25rem;
+  padding-bottom: 2rem;
 }
 
 footer .center {
@@ -388,6 +398,10 @@ footer .center .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+footer .center .social a {
+  margin-left: 0.3rem;
 }
 
 footer .center .social a img {
