@@ -66,7 +66,7 @@ body{
 // ------------- common starts ----------------
 
 .center{
-    max-width: 96rem;
+    max-width: 110rem;
     margin: auto;
     padding: 0 2rem;
 }
@@ -110,13 +110,20 @@ img{
         &:hover{
             color:$primary-color;
             border-bottom: 0.3rem solid $primary-color;
+
+
             
         }
+
+        
     }
+
+   
 
     .active{
         border-bottom: 0.3rem solid $primary-color;
-        
+
+
         
         
     }
@@ -240,7 +247,7 @@ main{
     // width:100%;
     margin-top: 20rem;
     .content{
-        padding:5rem 6rem 13.5rem 6rem;
+        padding:5rem 4rem 13.5rem 6rem;
 
         .total{
             display:flex;
@@ -263,7 +270,6 @@ main{
             display: flex;
             &-left{
                 width:25%;
-                // background: red;
                 text-align: center;
                 padding-top: 2.5rem;
 
@@ -306,7 +312,6 @@ main{
             }
             &-center{
                 width:50%;
-                // background: green;
                 // display: flex;
                 
                 // justify-content: center;
@@ -352,7 +357,7 @@ main{
                 .main-calculation{
                     margin-top: 1.3rem;
                     display: flex;
-                    padding-left: 3rem;
+                    padding-left: 2rem;
                     // justify-content: center;
                     .text-area{
                         width:80%;
@@ -393,27 +398,35 @@ main{
                     .button-wrap{
                         width:30%;
                         display: flex;
-                        justify-content: center;
+                        justify-content: flex-end;
 
                         button{
-                            width:80%;
-                            color:$white-color;
+                            width:90%;
+                            color:#fff;
                             background: $primary-color;
                             border: none;
+                            font-size: 2rem;
+                            font-weight: 600;
                             border-radius: 0.8rem;
                             outline: 0;
-                            box-shadow:  5px 5px 10px $primary-color, -5px -5px 10px #f6ffff;
-                        -webkit-box-shadow:  5px 5px 10px $primary-color, -5px -5px 10px #f6ffff;
+                            box-shadow:  5px 5px 10px rgb(169, 166, 166), -5px -5px 10px #f6ffff;
+                        -webkit-box-shadow:  5px 5px 10px rgb(169, 166, 166), -5px -5px 10px #f6ffff;
                             
                             cursor: pointer;
 
                             &:hover{
                                 opacity: 0.8;
                             }
+                                    
                         }
                     }
                 }
 
+            }
+
+            &-right{
+                width:24%;
+                margin-left: 2rem;
             }
           
         }
