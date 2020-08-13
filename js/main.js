@@ -40,4 +40,23 @@ ok.addEventListener('click', () => {
 
 
 
+const moreInfo = document.querySelector('.more-info');
+const close = document.querySelector('.close');
+const btn = document.querySelectorAll('.btn');
+const btnArr = Array.prototype.slice.call(btn);
+const body = document.querySelector('body');
+
+btnArr.forEach(element => {
+    element.addEventListener('click', () => {
+        body.classList.add('shown-more_info')
+    })
+});
+
+close.addEventListener('click', () => {
+
+    body.classList.remove('shown-more_info')
+})
+
+
+
 

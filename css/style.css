@@ -232,6 +232,10 @@ main .content .calculate-left {
   padding-top: 2.5rem;
 }
 
+main .content .calculate-left .btn {
+  outline: 0;
+}
+
 main .content .calculate-left .btn span {
   color: #6236FF;
   font-size: 1.4rem;
@@ -512,6 +516,7 @@ footer .center .social a img {
 
 .authorities ul li {
   margin-top: 2.4rem;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,5 +679,103 @@ footer .center .social a img {
   .error {
     width: 80%;
   }
+}
+
+.more-info {
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2rem;
+  width: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 0.8rem;
+  display: none;
+}
+
+.more-info .close {
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+  z-index: 1001;
+}
+
+.more-info .close button {
+  outline: 0;
+  font-size: 2.6rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.more-info ul li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.2rem;
+}
+
+.more-info ul li span {
+  color: #010101;
+  font-size: 1.4rem;
+}
+
+.more-info ul li span a {
+  text-decoration: none;
+}
+
+.more-info ul li span a:hover {
+  text-decoration: underline;
+}
+
+.more-info ul li span:first-child {
+  color: #777;
+}
+
+.more-info ul li .total-poa {
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .more-info {
+    width: 60%;
+  }
+  .more-info ul li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .more-info {
+    width: 80%;
+  }
+}
+
+.shown-more_info .cover-wrapper {
+  display: block;
+  height: 112%;
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  z-index: 900;
+  opacity: 0.6;
+  top: -11rem;
+  left: 0;
+  background: #6236FF;
+}
+
+.shown-more_info .more-info {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
