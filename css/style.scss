@@ -522,12 +522,14 @@ footer{
 
 .status-content{
     margin-top: 14rem;
-    
-   .boxed{
-    //    padding:0.1rem 0; 
-    // padding-top: 0.2rem;
-    padding-left: 2rem;
-   }
+    .center{
+
+        > .boxed{
+         //    padding:0.1rem 0; 
+         // padding-top: 0.2rem;
+         padding:0 2rem;
+        }
+    }
 }
 
 .status{
@@ -538,18 +540,19 @@ footer{
     &-lower{
         display: flex;
         margin-top:4rem;
+        justify-content: space-between;
         >div{
             // width:25%;
-            padding:0 5rem;
+            // padding:0 5rem;
             // background: red;
             // margin:0 1.4rem;
-            border-right:0.1rem solid $border-color;
-
+            // border-right:0.1rem solid $border-color;
+            padding:3rem;
             text-align: center;
 
-            &:last-child{
-                border-right: none;
-            }
+            // &:last-child{
+            //     border-right: none;
+            // }
             strong{
                 color:$primary-color;
                 display: block;
@@ -577,7 +580,7 @@ footer{
     .status{
         &-lower{
             >div{
-                padding: 0 3rem;
+                // padding: 0 3rem;
                 text-align: left;
                 strong{
                     font-size: 2.4rem;
@@ -604,7 +607,7 @@ footer{
 
             >div{
                 border-right:none;
-                padding: 0;
+                // padding: 0;
 
                 margin-top: 3rem;
             }
@@ -615,10 +618,15 @@ footer{
 // ----------- status ends-------------
 
 // ------------ authorities starts ---------
+.authorities-boxed{
+    // padding:2rem;
+}
 
 .authorities{
     margin-top:9rem;
-    padding-bottom: 3rem;
+    padding: 3rem;
+
+   
 
     ul{
         margin-top: 3rem;

@@ -439,8 +439,8 @@ footer .center .social a img {
   margin-top: 14rem;
 }
 
-.status-content .boxed {
-  padding-left: 2rem;
+.status-content .center > .boxed {
+  padding: 0 2rem;
 }
 
 .status {
@@ -453,16 +453,14 @@ footer .center .social a img {
   display: -ms-flexbox;
   display: flex;
   margin-top: 4rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .status-lower > div {
-  padding: 0 5rem;
-  border-right: 0.1rem solid #CCD5DD;
+  padding: 3rem;
   text-align: center;
-}
-
-.status-lower > div:last-child {
-  border-right: none;
 }
 
 .status-lower > div strong {
@@ -486,7 +484,6 @@ footer .center .social a img {
 
 @media (max-width: 800px) {
   .status-lower > div {
-    padding: 0 3rem;
     text-align: left;
   }
   .status-lower > div strong {
@@ -509,14 +506,13 @@ footer .center .social a img {
   }
   .status-lower > div {
     border-right: none;
-    padding: 0;
     margin-top: 3rem;
   }
 }
 
 .authorities {
   margin-top: 9rem;
-  padding-bottom: 3rem;
+  padding: 3rem;
 }
 
 .authorities ul {
