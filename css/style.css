@@ -61,8 +61,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 0 1.5rem;
-  height: 2.8rem;
-  line-height: 2.8rem;
+  height: 3.4rem;
+  line-height: 3.4rem;
 }
 
 .nav-right_login strong {
@@ -73,7 +73,7 @@ img {
 .nav-right_login a {
   font-size: 1.2rem;
   margin-left: 1.2rem;
-  height: 2.4rem;
+  height: 2.8rem;
   color: #010101;
   text-decoration: none;
   font-weight: 600;
@@ -138,14 +138,14 @@ nav .nav-right {
 }
 
 nav .nav-right > a {
-  padding: 0 2.5rem;
-  height: 2.8rem;
-  line-height: 2.8rem;
+  padding: 0 2.2rem;
+  height: 3.4rem;
+  line-height: 3.4rem;
   font-size: 1.9rem;
   color: #010101;
   text-decoration: none;
   font-weight: 600;
-  margin-left: 3.5rem;
+  margin-left: 2.8rem;
 }
 
 nav .nav-right > a span {
@@ -441,6 +441,7 @@ footer .center .social a img {
 
 .status-content .center > .boxed {
   padding: 0 2rem;
+  padding-bottom: 4rem;
 }
 
 .status {
@@ -461,6 +462,9 @@ footer .center .social a img {
 .status-lower > div {
   padding: 3rem;
   text-align: center;
+  background: #E6F0F8;
+  -webkit-box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
+          box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
 }
 
 .status-lower > div strong {
@@ -508,6 +512,12 @@ footer .center .social a img {
     border-right: none;
     margin-top: 3rem;
   }
+}
+
+.authorities-boxed {
+  background: #E6F0F8;
+  -webkit-box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
+          box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
 }
 
 .authorities {
