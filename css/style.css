@@ -590,6 +590,10 @@ footer .center .social a img {
   width: 50%;
 }
 
+.status-bottom > div .boxed {
+  padding: 2rem;
+}
+
 @media (max-width: 480px) {
   .status-bottom {
     -webkit-box-orient: vertical;
