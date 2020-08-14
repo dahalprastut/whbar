@@ -521,7 +521,7 @@ footer .center .social a img {
 }
 
 .authorities {
-  margin-top: 9rem;
+  margin-top: 3rem;
   padding: 3rem;
 }
 
@@ -593,7 +593,7 @@ footer .center .social a img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 .status-bottom > div {
