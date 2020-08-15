@@ -597,7 +597,7 @@ footer .center .social a img {
 }
 
 .status-bottom > div {
-  width: 50%;
+  width: 46%;
 }
 
 .status-bottom > div .boxed {
@@ -625,7 +625,9 @@ footer .center .social a img {
 }
 
 .error {
-  background: #fff;
+  background: #E6F0F8;
+  -webkit-box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
+          box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -701,8 +703,10 @@ footer .center .social a img {
 }
 
 .more-info {
-  background: #fff;
   position: absolute;
+  background: #E6F0F8;
+  -webkit-box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
+          box-shadow: inset 5px 5px 10px #d6dfe7,  inset -5px -5px 10px #f6ffff;
   top: 50%;
   left: 50%;
   padding: 2rem;
